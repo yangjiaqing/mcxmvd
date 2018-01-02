@@ -8,6 +8,7 @@ ports = list(serial.tools.list_ports.comports())
 print (ports)
 
 for p in ports:
+    global ser
     print (p[1])
     if ("SERIAL" in p[1])or("Serial" in p[1]):
 	    ser = serial.Serial(port=p[0],baudrate=115200)
