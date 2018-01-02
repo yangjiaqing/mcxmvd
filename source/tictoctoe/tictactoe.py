@@ -1,7 +1,9 @@
+import sys
+sys.path.append('..')
 import operators as op
 import random
 from   datetime import datetime
-import myuapi as myu
+import myuarm.myuapi as myu
 
 #create the game board
 game = [[0,0,0],[0,0,0],[0,0,0]]
