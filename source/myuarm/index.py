@@ -1,6 +1,8 @@
 import serial
 import serial.tools.list_ports
 import time
+import myuapi as myu
+
 print ('hello')
 movelist = ['G0 X100 Y100 Z100 F100\n','G0 X65 Y132 Z80 F100\n','G0 X00 Y132 Z80 F100\n','G0 X-55 Y146 Z80 F100\n','G0 X73 Y200 Z80 F100\n','G0 X10 Y200 Z80 F100\n','G0 X-50 Y214 Z80 F100\n','G0 X80 Y268 Z80 F100\n','G0 X10 Y268 Z80 F100\n','G0 X-45 Y282 Z80 F100\n']
 ports = list(serial.tools.list_ports.comports())
@@ -76,6 +78,8 @@ def playchess():
     initzero()
 
 def run():
+    myu.uarminit()
+    myu.putchess(0)
     action = "aaa"
     id=1
     while action != "q":
