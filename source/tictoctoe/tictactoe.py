@@ -9,10 +9,16 @@ import myuarm.myuapi as myu
 game = [[0,0,0],[0,0,0],[0,0,0]]
 win = False
 
+def gameinit():
+    game = [[0,0,0],[0,0,0],[0,0,0]]
+    win = False
+    init=False
+    myu.uarminit()
+
 def displayboard():
-    print(game[0])
-    print(game[1])
-    print(game[2])
+        print(game[0])
+        print(game[1])
+        print(game[2])
 
 #this function writes in board the mark
 def writePosition(position, player):

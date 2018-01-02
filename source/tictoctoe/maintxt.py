@@ -1,6 +1,8 @@
 import tictactoe as tic
 
 win = False
+tic.gameinit()
+
 while win is False:
     #acertar verificacao, sair do loop imediatamente se houve ganhador
     tic.getPlayerMark(1)

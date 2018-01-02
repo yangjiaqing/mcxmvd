@@ -143,6 +143,7 @@ def matchshapeslearn():
 write_comp = False
 cap = cv2.VideoCapture(0) #capture from 1st webcam
 chessFieldInit()
+tic.gameinit()
 key = 0
 win = False
 winner = 4
