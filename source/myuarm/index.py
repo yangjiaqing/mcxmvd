@@ -14,7 +14,7 @@ for p in ports:
 	    ser = serial.Serial(port=p[0],baudrate=115200)
     else :
         # ser = serial.Serial(port="24",baudrate=115200)
-	    print ("No Arduino Device was found connected to the computer")
+	    print ("No Serial or SERIAL Device was found connected to the computer")
 
 def moveurm(action=0):
     id=1
