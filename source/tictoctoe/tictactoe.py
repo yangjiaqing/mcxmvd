@@ -1,7 +1,7 @@
 import operators as op
 import random
-from datetime import datetime
-#import myuarm as myu
+from   datetime import datetime
+import myuapi as myu
 
 #create the game board
 game = [[0,0,0],[0,0,0],[0,0,0]]
@@ -35,6 +35,7 @@ def writePosition(position, player):
     else:
         if player==2:  #computer player, try to egage uarm
             print("please add urm code here like this myu.putchess(position)")
+            myu.putchess(position)
 
 def readPosition(position):
     if position < 3:
