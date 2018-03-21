@@ -4,7 +4,7 @@ import time
 import tictactoe as tic
 
 CARD_COLOR_UP = np.array([255,255,255],dtype="uint8")
-CARD_COLOR_LOW = np.array([150,150,150],dtype="uint8")
+CARD_COLOR_LOW = np.array([175,175,175],dtype="uint8")
 FONTE = cv2.FONT_HERSHEY_SIMPLEX
 global choose_user, player, computer,points,fields,line,column
 KERNEL = np.ones((3,3),np.uint8)
@@ -86,7 +86,7 @@ def getPlayerMove(points, frame):
 
 def chessFieldInit():
     global fields,points,column,line
-    x,y,h,w=100,100,300,300
+    x,y,h,w=30,30,480,480
     column = int(w/3)
     line = int(h/3)
     for num_column in range(0,4):
