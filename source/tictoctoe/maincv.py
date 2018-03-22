@@ -4,7 +4,7 @@ import time
 import tictactoe as tic
 
 CARD_COLOR_UP = np.array([255,255,255],dtype="uint8")
-CARD_COLOR_LOW = np.array([175,175,175],dtype="uint8")
+CARD_COLOR_LOW = np.array([165,165,165],dtype="uint8")
 FONTE = cv2.FONT_HERSHEY_SIMPLEX
 global choose_user, player, computer,points,fields,line,column
 KERNEL = np.ones((3,3),np.uint8)
